@@ -1,0 +1,27 @@
+@font-face {
+  font-family: pki;
+  src: url(/fonts/tama_mini02.TTF);
+}
+
+.pki-body {
+  margin-top: 50px;
+  background-color: white;
+}
+
+.pki-background {
+  background-image:url("/img/fotogrph-hard-drives-691859547.jpg");
+  height: 1000px;
+  background-repeat:no-repeat;
+}
+
+.pki-text {
+  color: white;
+  background-color: black;
+  font-family: pki;
+  padding-left: 20px;
+}
+
+.row.extramargin {
+  margin: 120px auto 10px !important;
+}
+

@@ -3,6 +3,15 @@
   src: url(/fonts/tama_mini02.TTF);
 }
 
+@font-face {
+  font-family: pki-simple;
+  src: url(/fonts/blank-Regular.otf);
+}
+
+@font-face {
+  font-family: pki-simple-bold;
+  src: url(/fonts/blank-Bold.otf);
+}
 .pki-body {
   margin-top: 50px;
   background-color: white;
@@ -14,14 +23,32 @@
   background-repeat:no-repeat;
 }
 
+.pki-header {
+  color: #008CBA !important;
+}
+
 .pki-text {
   color: white;
   background-color: black;
   font-family: pki;
-  padding-left: 20px;
+  padding-left: 10px;
+}
+
+.pki-tagline {
+  color: white;
+  background-color: black;
+  font-family: pki-simple-bold;
+  padding-left: 10px;
+}
+
+.pki-title {
+  font-family: pki;
+}
+
+.pki-subtitle {
+  font-family: pki-simple-bold;
 }
 
 .row.extramargin {
-  margin: 120px auto 10px !important;
+  margin-top: 120px !important;
 }
-

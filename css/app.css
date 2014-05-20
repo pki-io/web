@@ -19,7 +19,7 @@
 
 .pki-background {
   background-image:url("/img/fotogrph-hard-drives-691859547.jpg");
-  height: 1000px;
+  height: 100px;
   background-repeat:no-repeat;
 }
 
@@ -50,5 +50,14 @@
 }
 
 .row.extramargin {
-  margin-top: 120px !important;
+  margin-top: 100px !important;
+}
+
+.pki-panel {
+  height: 250px;
+}
+
+pre.pki {
+  color: #008CBA !important;
+  background-color: black;
 }

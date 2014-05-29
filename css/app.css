@@ -34,6 +34,13 @@
   padding-left: 10px;
 }
 
+.pki-text-logo {
+  color: black;
+  font-size: 1.4em;
+  font-family: pki;
+}
+
+
 .pki-tagline {
   color: white;
   background-color: black;
@@ -50,14 +57,21 @@
 }
 
 .row.extramargin {
-  margin-top: 100px !important;
+  margin-top: 50px !important;
 }
 
 .pki-panel {
-  height: 250px;
+  min-height: 250px;
+  border-width: 4px;
+  border-color: black;
+  background: white;
 }
 
 pre.pki {
   color: #008CBA !important;
   background-color: black;
+}
+
+.pki-large {
+  font-size: 1.4em;
 }

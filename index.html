@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pki.io &gt; Internal CAs. Made Easy.</title>
+    <title>pki.io &gt; Certificate Management. Reinvented.</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -18,198 +18,157 @@
   <body class="pki-body">
     
     <div class="row">
+      <div class="large-2 columns">
+        <h1 class="pki-text">pki<span class="pki-header">.</span>io</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-5 columns">
+        <h4 class="pki-tagline">Certificate Management. Reinvented.</h4>
+      </div>
+    </div>
+
+    <div class="row extramargin">
       <div class="large-12 columns">
-
-        <div class="row">
-          <div class="large-2 columns">
-            <h1 class="pki-text">pki<span class="pki-header">.</span>io</h1>
-          </div>
+        <h3>It's 3am and the 10am deadline is fast approaching.</h3>
+        <blockquote> Raz0rBl@de opens a new can of energy drink. His fifth since midnight. He has  been working on this job for two weeks without significant progress. If he fails his client is going to be pretty unhappy and they're not the type of people you want to upset. Unless you are particularly fond of baseball bats. Ding. A new email. Someone has just pushed a bug fix to one of the open source projects the target is running. Sweet. A bug in the protocol stack. Exploiting that should give him the access he so desperately needs. An hour later he has a working exploit. Ten minutes later he is finally in. The client just needs a copy of the customer database. Probably going to provide someone the competitive advantage to crush this little startup. But he has only just owned the Linux load balancer. He will need to find a way in to the database server. Damn. No known vulnerabilities and he doesn't have time to find a zero day. Change of plan. Attack the traffic. Get credentials, query the db, get out of there. Raz0rBl@de uploads a packet sniffer and fires it up. His heart sinks. He feels himself turning pale. Close to panic. Encrypted. They've encrypted the traffic from the cloud-hosted app servers. Who actually bothers to encrypt database traffic? An hour is wasted trying to find another way. Then another hour. It's 8am. Hope is lost. Raz0rBl@de gets up from his desk and gets into bed. Staring up at the ceiling he waits for the knocks at the door.</blockquote>
+      <h3>Andrew walks to his desk and sits down.</h3>
+      <blockquote>He looks at the clock on his computer. It's 8:45. Earlier than usual. Checking his emails one stands out. An IDS alert. One of the network processes on one of the gateways has spawned a shell. Strange. He logs in to investigate. The bash history is full of commands. Looks like the attacker didn't even bother to hide their tracks. Looks like they were targeting the database servers. A banner grab. Hmmm, a packet sniffer. The port scan showed that they must have been getting desparate. No other IDS alerts though. Andrew checks the database logs for access attempts but doesn't find anything unusual. Looks like they didn't get further than the gateway. He looks at the security announcements of the project that was exploited on his server. Nothing. A quick look at the version control commits. Bingo! Nasty. Still, nothing a u32 iptables rule can't stop until a proper patch is relase. He logs into the second gateway, adds the work around then fails the virtual ip address over to the standby. Logging onto the switch he disables the ports for the compromised server. That'll give him time to do some forensics later. Traffic has failed over. Probably worth rotating all the database TLS certificates. 30 seconds later he has generated and pushed a new private CA for the databases. Within 5 minutes all the certs will have rotated and the change management system will have reloaded all the necessary services. It's 9:00. Andrew gets up to make his second coffee of the day.</blockquote>
+      </div>
+    </div>
+    
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <div class="panel pki-panel">
+          <p class="pki-large">For any organisation, whether startup or enterprise, that values customer data and wants to improve their infrastructure security. pki.io is a service that provides simplicity, automation and security for the management of certificate infrastructure used by SSL/TLS encryption. Unlike developing a solution in-house, pki.io is cost-effective and makes not using encryption simply not worth the risk.</p>
+          <h3 class="pki-subtitle">Designed to work with:</h3>
+          <img src="/img/logos.png"/>
+          <h3 class="pki-subtitle text-right">... and many more!</h3>
         </div>
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="large-4 columns">
-            <h4 class="pki-tagline">Internal CAs. Made Easy.</h4>
-          </div>
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <h2 class="pki-text pki-header">&gt; Features</h2>
+      </div>
+    </div>
+
+    <div class="row data-equalizer">
+      <div class="large-4 columns">
+        <div class="panel pki-panel" data-equalizer-watch>
+          <h3 class="text-center pki-subtitle">Simple</h3>
+          <ul>
+            <li>Easy to use command line administration tool</li>
+            <li>No coding or obscure openssl commands required</li>
+            <li>Fire-and-forget server agent</li>
+          </ul>
         </div>
-
-        <div class="row extramargin">
-          <div class="large-12 columns">
-            <p>Nam porttitor dictum lectus, ut egestas justo pharetra quis. Vestibulum imperdiet lectus vel justo suscipit, sit amet egestas est luctus. Praesent fermentum semper ipsum, at consectetur est venenatis ut. Morbi sollicitudin aliquet volutpat. Duis feugiat nisl vitae dapibus facilisis. Nullam arcu enim, interdum ac quam at, adipiscing auctor risus. Nam faucibus magna lorem. Vivamus bibendum condimentum orci, ut porttitor lacus vestibulum non.</p>
-          </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="panel pki-panel" data-equalizer-watch>
+          <h3 class="text-center pki-subtitle">Secure</h3>
+          <ul>
+            <li>Quickly revoke and regenerate CAs and certificates</li>
+            <li>Separate service encryption without hassle</li>
+            <li>Built using standard libraries and established crypto algorithms</li>
+          </ul>
         </div>
-
-        <div class="row extramargin">
-          <div class="large-12 columns">
-            <h2 class="pki-text pki-header">&gt; Features</h2>
-          </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="panel pki-panel" data-equalizer-watch>
+          <h3 class="text-center pki-subtitle">Automated</h3>
+          <ul>
+            <li>Admin-driven or fully automated, ideal for cloud deployments</li>
+            <li>Designed to scale from tens to thousands of servers</li>
+            <li>Optimized architecture for speed</li>
+          </ul>
         </div>
+      </div>
+    </div>
 
-        <div class="row data-equalizer">
-          <div class="large-4 columns">
-            <div class="panel pki-panel" data-equalizer-watch>
-              <h3 class="text-center pki-subtitle">Simple</h3>
-              <ul>
-                <li>Easy to use command line administration tool</li>
-                <li>No coding or obscure openssl commands required</li>
-                <li>Fire-and-forget server agent</li>
-              </ul>
-            </div>
-          </div>
-          <div class="large-4 columns">
-            <div class="panel pki-panel" data-equalizer-watch>
-              <h3 class="text-center pki-subtitle">Secure</h3>
-              <ul>
-                <li>Designed with security in mind</li>
-                <li>Built using standard libraries and uses established crypto algorithms</li>
-                <li>Simple and light-weight server agent</li>
-              </ul>
-            </div>
-          </div>
-          <div class="large-4 columns">
-            <div class="panel pki-panel" data-equalizer-watch>
-              <h3 class="text-center pki-subtitle">Automated</h3>
-              <ul>
-                <li>Admin-driven or fully automated, ideal for cloud deployments</li>
-                <li>Designed to scale from Nam elit eros, auctor vitae facilisis vel,</li>
-                <li>Proin luctus pharetra eleifend.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <h2 class="pki-text pki-header">&gt; Use-cases</h2>
+      </div>
+    </div>
 
-        <div class="row extramargin">
-          <div class="large-12 columns">
-            <h2 class="pki-text pki-header">&gt; Use-cases</h2>
-          </div>
-        </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 class="pki-subtitle">Infrastructure</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img class="" src="/img/infrastructure.png"/>
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <h3 class="pki-subtitle">server-to-server > Admin-driven</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
-<div class="row">
-<div class="large-8 large-offset-2 columns">
-<pre class="pki">
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 class="pki-subtitle">VPN</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img class="" src="/img/vpn.png"/>
+      </div>
+    </div>
 
-                     +--------------+                                      
-                     |              |                                      
-              +------+    pki.io    +-----------------+                    
-              |      |              |                 |                    
-              |      +--------------+                 |                    
-              |                                       |                    
-              |                                       |                    
-  +-----------------------------------------------------------------------+
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                             +---------+----------+         
-         +----+----+                        |                    |         
-         |         |                        |                    |         
-         |         |                        |                    |         
-         |         +------------------------+                    |         
-         |         |                        |                    |         
-         |         |                        |                    |         
-         +---------+                        |                    |         
-                                            |                    |         
-                                            +--------------------+         
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 class="pki-subtitle">Client-service</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img class="" src="/img/internal.png"/>
+      </div>
+    </div>
 
-</pre>
-</div>
-</div>
-          </div>
-        </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 class="pki-subtitle">External CA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img class="" src="/img/external.png"/>
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <h3 class="pki-subtitle">server-to-server > Fully automated</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
-<div class="row">
-<div class="large-8 large-offset-2 columns">
-<pre class="pki">
 
-                     +--------------+                                      
-                     |              |                                      
-              +------+    pki.io    +-----------------+                    
-              |      |              |                 |                    
-              |      +--------------+                 |                    
-              |                                       |                    
-              |                                       |                    
-  +-----------------------------------------------------------------------+
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                             +---------+----------+         
-         +----+----+                        |                    |         
-         |         |                        |                    |         
-         |         |                        |                    |         
-         |         +------------------------+                    |         
-         |         |                        |                    |         
-         |         |                        |                    |         
-         +---------+                        |                    |         
-                                            |                    |         
-                                            +--------------------+         
 
-</pre>
-</div>
-</div>
-          </div>
-        </div>
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <h2 class="pki-text pki-header">&gt; Architecture</h2>
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <h3 class="pki-subtitle">client-service</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
-<div class="row">
-<div class="large-8 large-offset-2 columns">
-<pre class="pki">
+    <div class="row">
+      <div class="large-12 columns">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
+      </div>
+    </div>
 
-                     +--------------+                                      
-                     |              |                                      
-              +------+    pki.io    +-----------------+                    
-              |      |              |                 |                    
-              |      +--------------+                 |                    
-              |                                       |                    
-              |                                       |                    
-  +-----------------------------------------------------------------------+
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                                       |                    
-              |                             +---------+----------+         
-         +----+----+                        |                    |         
-         |         |                        |                    |         
-         |         |                        |                    |         
-         |         +------------------------+                    |         
-         |         |                        |                    |         
-         |         |                        |                    |         
-         +---------+                        |                    |         
-                                            |                    |         
-                                            +--------------------+         
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <h2 class="pki-text pki-header">&gt; Find out more</h2>
+      </div>
+    </div>
 
-</pre>
-</div>
-</div>
-          </div>
-        </div>
-
-        <div class="row extramargin">
-          <div class="large-12 columns">
-            <h2 class="pki-text pki-header">&gt; Find out more</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="large-6 columns">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
-          </div>
-          <div class="large-6 columns">
-            <div class="panel">
-            <h3 class="pki-subtitle">Sed consectetur risus</h3>
+    <div class="row">
+      <div class="large-6 columns">
+        <p class="pki-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra.</p>
+      </div>
+      <div class="large-6 columns">
+        <div class="panel pki-panel">
+            <h3 class="pki-subtitle">Join the beta waiting list</h3>
             <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="http://pki.us8.list-manage.com/subscribe/post?u=e0478b81ffa22c83afe3bfe15&amp;id=fe919f2b15" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -418,20 +377,19 @@ function mce_success_cb(resp){
 
 </script>
 <!--End mc_embed_signup-->
-            </div>
-          </div>
         </div>
-
-        <div class="row">
-          <div class="large-12 columns">
-            <hr/>
-            <p class="text-center">Privacy | hello@pki.io</p>
-          </div>
-        </div>
-
       </div>
     </div>
-    
+
+    <div class="row">
+      <div class="large-12 columns">
+        <hr/>
+        <p class="text-center">Privacy | hello@pki.io</p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>

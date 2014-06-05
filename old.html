@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pki.io &gt; Certificate Management, without the hassle</title>
+    <title>pki.io &gt; Simple, secure and automated certificate management.</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -25,39 +25,49 @@
 
     <div class="row">
       <div class="large-7 columns">
-        <h4 class="pki-tagline">Certificate Management, without the hassle</h4>
+        <h4 class="pki-tagline">Simple, secure and automated certificate management.</h4>
+      </div>
+    </div>
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <div class="sidebar-box">
+        <h3>It's 3am and the 10am deadline is fast approaching.</h3>
+        <blockquote> Raz0rBl@de opens a new can of energy drink. His fifth since midnight. He has been working on this job for two weeks without significant progress. If he fails, his client is going to be very unhappy, and they're not the types you want to upset. Unless you are particularly fond of baseball bats. Ding. A new email. Someone has just pushed a bug fix to one of the open source projects the target is running. Sweet. A bug in the protocol stack. Exploiting that should give him the access he so desperately needs. An hour later he has a working exploit. Ten minutes later he is finally in. The client just needs a copy of the customer database. Probably going to provide someone the competitive advantage to crush this little startup. But he has only just owned the Linux gateway. He will need to find a way in to the database server. Damn. No known vulnerabilities and he doesn't have time to find a zero day. Change of plan. Attack the traffic. Get credentials, query the db, get out of there. Raz0rBl@de uploads a packet sniffer and fires it up. His heart sinks. He feels himself turning pale. Close to panic. Encrypted. They've encrypted the traffic from the cloud-hosted app servers. Who actually bothers to encrypt database traffic? An hour is wasted trying to find another way. Then another hour. It's 8am. Hope is lost. Raz0rBl@de gets up from his desk and climbs into bed. Staring up at the ceiling he waits for a knock at the door.</blockquote>
+      <h3>It's 8:45. Andrew walks to his desk and sits down.</h3>
+      <blockquote>Earlier than usual. Checking his emails, one stands out. An IDS alert. A network process on one of the gateways has spawned a shell. Strange. He logs in to investigate. The bash history is full of commands. Looks like the attacker didn't even bother to hide their tracks. Looks like they were targeting the database servers. A banner grab. Hmmm, a packet sniffer. A port scan shows that they must have been getting desparate. No other IDS alerts though. Andrew checks the database logs for access attempts but doesn't find anything unusual. Looks like they didn't get further than the gateway. He looks at the security announcements of the project that was exploited on his server. Nothing. A quick look at the source commits. Bingo! Nasty. Still, nothing a u32 iptables rule can't block until a proper patch is released. He logs into the second gateway, adds the workaround then fails the virtual ip address over to the standby. Logging onto the switch he disables the ports of the compromised server. That'll give him time to do some forensics later. Traffic has failed over. Probably worth rotating all the database TLS certificates. 30 seconds later he has generated and pushed a new private CA for the databases. Within 5 minutes all the certs will have rotated and the change management system will have reloaded all the necessary services. It's 9:00. Andrew gets up to make his second coffee of the day.</blockquote>
+        <p class="read-more"><a href="#" class="button">Read the story</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row extramargin">
+      <div class="large-12 columns">
+          <p class="pki-large">For any organisation, whether startup or enterprise, that values customer data and wants to improve their infrastructure security. pki.io is a service that provides simplicity, automation and security for the management of certificate infrastructure used by SSL/TLS encryption. Unlike developing a solution in-house, pki.io is cost-effective and lowers the barrier to rolling out encryption.</p>
       </div>
     </div>
 
     <div class="row extramargin">
       <div class="large-12 columns">
-        <p class="large"><span class="verylarge">Your startup has been growing faster than you ever dreamed of.</span> You're about to win a massive client deal with a major corporation. Bringing them on board will open the floodgates to other large customers, giving your business the future it needs. <span class="verylarge">But there is a problem.</span> They love your service, your innovation, your passion. But they're worried you're too new, too inexperienced, too risky. Spooked by the daily news of breaches, data theft and the Heartbleed bug, they're worried about whether they can really trust you with their data. A compromise would be disastrous for them. You've got firewalls, antivirus, even an IDS. What you're not doing is encrypting internal traffic. Your software stack supports TLS. <span class="verylarge">You need a certificate management system that is simple, secure and automated.</span></p>
-
-      </div>
-    </div>
-
-    <div class="row extramargin">
-      <div class="large-12 columns">
-          <p class="pki-subtitle extramargin">Designed to work with:</p>
+          <h3 class="pki-subtitle extramargin">Designed to work with:</h3>
           <img src="/img/logos.png"/>
-          <p class="pki-subtitle text-right extramargin">... and many more!</p>
+          <h3 class="pki-subtitle text-right extramargin">... and many more!</h3>
       </div>
     </div>
- 
+
     <div class="row extramargin">
       <div class="large-12 columns">
-        <h2 class="pki-text pki-header">&gt; Benefits</h2>
+        <h2 class="pki-text pki-header">&gt; Features</h2>
       </div>
     </div>
 
     <div class="row data-equalizer">
       <div class="large-4 columns">
         <div class="panel pki-panel" data-equalizer-watch>
-          <h3 class="text-center pki-subtitle">Cost-effective</h3>
+          <h3 class="text-center pki-subtitle">Simple</h3>
           <ul>
-            <li>No development time required - focus on building your awesome products and services</li>
-            <li>Create as many certificates and CAs as you need at no extra cost</li>
-            <li>A secure SaaS platform - no need to run a secure CA infrastructure yourself</li>
+            <li>Easy to use command line administration tool</li>
+            <li>No coding or obscure openssl commands required</li>
+            <li>Fire-and-forget server agent</li>
           </ul>
         </div>
       </div>
@@ -65,9 +75,9 @@
         <div class="panel pki-panel" data-equalizer-watch>
           <h3 class="text-center pki-subtitle">Secure</h3>
           <ul>
-            <li>Encrypt your internal and external traffic - no excuses</li>
-            <li>Quickly rotate CAs and certificates in the event of a compromise</li>
-            <li>Zero-knowledge Policy - we don't have access to your data</li>
+            <li>Quickly revoke and regenerate CAs and certificates</li>
+            <li>Separate service encryption without hassle</li>
+            <li>Built using standard libraries and established crypto algorithms</li>
           </ul>
         </div>
       </div>
@@ -77,9 +87,77 @@
           <ul>
             <li>Admin-driven or fully automated, ideal for cloud deployments</li>
             <li>Designed to scale from tens to thousands of servers</li>
-            <li>Integrate with existing Configuration Management</li>
+            <li>Optimized architecture for speed</li>
           </ul>
         </div>
+      </div>
+    </div>
+
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <h2 class="pki-text pki-header">&gt; Use-cases</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 class="pki-subtitle">Infrastructure</h3>
+        <p class="">pki.io manages the CAs and certificates used by TLS/SSL to protect your infrastructure and customer data. By having a separate internal CA for each service, you minimise exposure in the event of a CA comprise and fewer certificates need to be rotated upon a CA regeneration. Typical services include application servers to database servers, monitoring metrics, log data, service discovery and configuration management systems and many more.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img class="" src="/img/infrastructure.png"/>
+      </div>
+    </div>
+
+    <div class="row moremargin">
+      <div class="large-12 columns">
+        <h3 class="pki-subtitle">Virtual Private Network</h3>
+        <p class="">SSL Virtual Private Networks have become very popular in recent years due to their flexibility and simplicity. They can be used to secure traffic between offices, data centres and staff on the road. However they still require you to create and manage the certificates. pki.io takes the hassle out of managing those certificates. You can invite a user to a CA which will automatically send them an invitation email containing a self-service URL. You can also easily rotate and revoke user certificates.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img class="" src="/img/vpn.png"/>
+      </div>
+    </div>
+
+    <div class="row moremargin">
+      <div class="large-12 columns">
+        <h3 class="pki-subtitle">Client-service</h3>
+        <p class="">Many organisations use HTTPS on intranet sites, but they rarely use trusted CAs. As a result, users get into the habit of ignoring the certificate warnings when they visit the site. This isn't just inconvinient, it actually lowers overall security because you're basically training users to ingore what should be legitimate warnings. Using an external CA can be expensive, particularly for</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img class="" src="/img/internal.png"/>
+      </div>
+    </div>
+
+    <div class="row moremargin">
+      <div class="large-12 columns">
+        <h3 class="pki-subtitle">External CA</h3>
+        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img class="" src="/img/external.png"/>
+      </div>
+    </div>
+
+
+
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <h2 class="pki-text pki-header">&gt; Architecture</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <p class="pki-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula justo augue, mattis aliquet odio auctor ac. In id blandit dui. Maecenas a metus sed lorem pellentesque pharetra. Duis non turpis varius ante condimentum rhoncus eget sed purus. Aliquam lacinia augue nisi, in gravida nisi egestas quis. Sed egestas pellentesque tempor. Sed consectetur risus imperdiet consectetur venenatis.</p>
       </div>
     </div>
 
@@ -91,7 +169,8 @@
 
     <div class="row">
       <div class="large-6 columns">
-        <p class="large">We know that we can add value to the security of your organisation, and if you agree, we’d love to hear from you. We're actively developing the platform and business model, so get in touch to discuss how we can take the hassle out of infrastructure security for you.</p>
+        <p class="pki-large">Thank you for showing an interest in pki.io</p>
+        <p class="">We know that we can add value to the security of your organisation, and if you agree, we’d love to hear from you. We are actively developing the platform and business model, so get in touch to discuss how we can cure your certificate management headache.</p>
       </div>
       <div class="large-6 columns">
         <div class="panel pki-panel">
@@ -311,7 +390,7 @@ function mce_success_cb(resp){
     <div class="row">
       <div class="large-12 columns">
         <hr/>
-        <p class="text-center"><a href="/privacy.txt">Privacy</a> | <a href="mailto:hello@pki.io">hello@pki.io</a></p>
+        <p class="text-center">Privacy | hello@pki.io</p>
       </div>
     </div>
 

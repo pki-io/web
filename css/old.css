@@ -1,0 +1,118 @@
+@font-face {
+  font-family: pki;
+  src: url(/fonts/tama_mini02.TTF);
+}
+
+@font-face {
+  font-family: pki-simple;
+  src: url(/fonts/blank-Regular.otf);
+}
+
+@font-face {
+  font-family: pki-simple-bold;
+  src: url(/fonts/blank-Bold.otf);
+}
+.pki-body {
+  margin-top: 50px;
+  background-color: white;
+}
+
+.pki-background {
+  background-image:url("/img/fotogrph-hard-drives-691859547.jpg");
+  height: 100px;
+  background-repeat:no-repeat;
+}
+
+.pki-header {
+  color: #008CBA !important;
+}
+
+.pki-text {
+  color: white;
+  background-color: black;
+  font-family: pki;
+  padding-left: 10px;
+}
+
+.pki-text-logo {
+  color: black;
+  font-size: 1.4em;
+  font-family: pki;
+}
+
+
+.pki-tagline {
+  color: white;
+  background-color: black;
+  font-family: pki-simple-bold;
+  padding-left: 10px;
+}
+
+.pki-title {
+  font-family: pki;
+}
+
+.pki-subtitle {
+  font-family: pki-simple-bold;
+}
+
+.row.moremargin {
+  margin-top: 100px !important;
+}
+
+.row.extramargin {
+  margin-top: 150px !important;
+}
+
+h3.extramargin {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.pki-panel {
+  min-height: 250px;
+  border-width: 4px;
+  border-color: black;
+  background: white;
+}
+
+pre.pki {
+  color: #008CBA !important;
+  background-color: black;
+}
+
+.pki-large {
+  font-size: 1.3em;
+}
+
+.sidebar-box {
+  max-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar-box .read-more { 
+  position: absolute; 
+  bottom: 0; left: 0;
+  width: 100%; 
+  text-align: center; 
+  margin: 0; padding: 10px 0; 
+  
+  /* "transparent" only works here because == rgba(0,0,0,0) */ 
+  /* background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, black));
+        background-image: -webkit-linear-gradient(top, transparent, black);
+        background-image: -moz-linear-gradient(top, transparent, black);
+        background-image: -ms-linear-gradient(top, transparent, black);
+        background-image: -o-linear-gradient(top, transparent, black); */
+  /* content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  top: 0; right: 0;*/
+  
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 0, 0));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}

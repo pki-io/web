@@ -38,7 +38,7 @@
 
     <div class="row extramargin">
       <div class="large-12 columns">
-        <p class="large"><span class="verylarge">Your startup has been growing faster than you ever dreamed of.</span> You're about to win a massive client deal with a major corporation. Bringing them on board will open the floodgates to other large customers, giving your business the future it needs. They love your service, your innovation, your passion. <span class="verylarge">But there is a problem.</span> They're worried you're too new, too inexperienced, too risky. Spooked by the daily news of breaches, data theft and the Heartbleed bug, they're worried about whether they can really trust you with their data. A compromise would be disastrous for them. You've got firewalls, anti-virus, even an IDS. What you're not doing is encrypting all your traffic. Your software stack supports TLS. <span class="verylarge">You need a certificate management system that is cost-effective, secure and automated.</span></p>
+        <p class="large"><span class="verylarge">Your startup has been growing faster than you ever dreamed of.</span> You're about to win a massive client deal with a major corporation. Bringing them on board will open the floodgates to other large customers, giving your business the future it needs. They love your service, your innovation, your passion. <span class="verylarge">But there is a problem.</span> They're worried you're too new, too inexperienced, too risky. They're worried about whether they can really trust you with their data. A compromise would be disastrous for them. You've got firewalls, anti-virus, even an IDS. What you're not doing is encrypting all your traffic. Your software stack supports TLS. <span class="verylarge">You need a certificate management system that is cost-effective, secure and automated.</span></p>
       </div>
     </div>
 
@@ -51,9 +51,26 @@
     <div class="row">
       <div class="large-12 columns">
         <p class="large">pki.io is a new way to manage the CAs and certificates used by TLS/SSL to protect your infrastructure and customer data.</p>
-        <p class="large">With pki.io you can easily encrypt internal infrastructure traffic, SSL VPN connections, intranet and operations services, as well as implementing X.509 mutual authentication.</p>
-        <p class="large">Use pki.io to generate internal CAs, e.g. one for every service, then link registered servers to those CAs. Agents running on the servers will automatically download and decrypt the appropriate CAs, generate their CSRs, sign them with the CAs and save the certificates. In the event of a compromise, revoking a server will automatically regenerate all affected CAs which will cause all relevant servers to regenerate their certificates. All within minutes.</p>
+        <p class="large">With pki.io you can easily encrypt internal infrastructure traffic, SSL VPN connections, intranet and operations services, as well as implement X.509 mutual authentication.</p>
+      </div>
+    </div>
+
+    <div class="row extramargin">
+      <div class="large-12 columns">
+        <h2 class="pki-text pki-header">&gt; How it works</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <p class="large">Use pki.io to generate internal CAs, e.g. one for every service, then associate registered servers to those CAs. Agents running on the servers will automatically download and decrypt the appropriate CAs, generate their CSRs, sign them with the CAs and save the certificates. In the event of a compromise, revoking a server will automatically regenerate all affected CAs which will cause all relevant servers to regenerate their certificates. All within minutes.</p>
         <p class="large">Because pki.io is a hosted service, you don't need to worry about running and securing additional infrastructure. And don't worry, your CAs, certificates and other sensitive data are encrypted before being uploaded.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <img src="img/architecture.png" alt="pki.io architecture diagram"/>
       </div>
     </div>
 

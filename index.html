@@ -8,9 +8,14 @@
     <title>pki.io &gt; Encryption. Everywhere.</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
+
+    <link href="css/social.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="css/app.css" />
     <script src="js/vendor/modernizr.js"></script>
     <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
     <style type="text/css">
       #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
       /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
@@ -45,8 +50,9 @@
 
     <div class="row">
       <div class="large-12 columns">
-        <p class="large">pki.io is a cost-effective, secure and automated way to manage the CAs and certificates used by TLS/SSL to protect your infrastructure and customer data.</p>
+        <p class="large">pki.io is a new way to manage the CAs and certificates used by TLS/SSL to protect your infrastructure and customer data.</p>
         <p class="large">With pki.io you can easily encrypt internal infrastructure traffic, SSL VPN connections, intranet and operations services, as well as implementing X.509 mutual authentication.</p>
+        <p class="large">Use pki.io to generate internal CAs, e.g. one for every service, then connect registered servers link those CAs. Agents running on the servers will automatically download and decrypt the appropriate CAs, generate their CSRs, sign them with the CAs and save the certificates. In the event of a compromise, revoking a server will automatically regenerate all affected CAs which will cause all relevant servers to regenerate their certificates. All within minutes.</p>
       </div>
     </div>
 
@@ -323,11 +329,36 @@ function mce_success_cb(resp){
 
 </script>
 <!--End mc_embed_signup-->
+          <hr/><br/>
+<div id="surveyMonkeyInfo"><div><script src="http://www.surveymonkey.com/jsEmbed.aspx?sm=xi5bv7YNGbklbpgceVFDsg_3d_3d"> </script></div>Create your free online surveys with <a href="https://www.surveymonkey.com">SurveyMonkey</a> , the world's leading questionnaire tool.</div>
         </div>
       </div>
     </div>
 
     <div class="row extramargin">
+      <div class="large-12 columns text-center">
+        <div id="menu-wrap">
+          <div class="menu-item">
+            <span id="active" class="icon fa fa-facebook"></span>
+            <a id="hover" class="text" href="https://www.facebook.com/sharer/sharer.php?u=http://pki.io"><i class="fa fa-facebook"></i></a>
+          </div><!-- Menu Item -->
+          <div class="menu-item">
+            <span id="active" class="icon fa fa-twitter"></span>
+            <a id="hover" class="text" href="https://twitter.com/home?status=http://pki.io%20is%20an%20easier,%20secure%20and%20automated%20way%20to%20manage%20SSL%20CAs%20and%20certificates.%20Check%20it%20out.%20Encryption.%20Everywhere."><i class="fa fa-twitter"></i></a>
+          </div><!-- Menu Item -->
+          <div class="menu-item">
+            <span id="active" class="icon fa fa-linkedin"></span>
+            <a id="hover" class="text" href="https://www.linkedin.com/shareArticle?mini=true&url=http://pki.io&title=pki.io%20-%20Encryption.%20Everywhere.&summary=pki.io%20is%20a%20cost-effective,%20secure%20and%20automated%20way%20to%20manage%20the%20CAs%20and%20certificates%20used%20by%20TLS/SSL%20to%20protect%20your%20infrastructure%20and%20customer%20data.&source="><i class="fa fa-linkedin"></i></a>
+          </div><!-- Menu Item -->
+          <div class="menu-item">
+            <span id="active" class="icon fa fa-google-plus"></span>
+            <a id="hover" class="text" href="https://plus.google.com/share?url=http://pki.io"><i class="fa fa-google-plus"></i></a>
+          </div><!-- Menu Item -->
+        </div><!-- Menu Wrap -->
+      </div>
+    </div>
+
+    <div class="row">
       <div class="large-12 columns text-center">
         <iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/qKk8MHFLNNE?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -381,6 +412,7 @@ $(".sidebar-box .button").click(function() {
     
 });
     </script>
+<script type="text/javascript" src="js/social.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

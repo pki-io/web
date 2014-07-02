@@ -1,0 +1,9 @@
+
+Internally hosted service that signs certs
+
+1) Bootstrap a server
+   - OOB copy cert chain, and auth tokens for each intermediate CA
+   - OOB run curl to obtain agent from the service over TLS using cert chain
+   - Install agent
+   - Agent generates server public and private key
+   - Agent sends hostname and public key and registers with service

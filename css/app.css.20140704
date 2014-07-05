@@ -1,0 +1,90 @@
+@font-face {
+  font-family: pki;
+  src: url(/fonts/tama_mini02.TTF);
+}
+
+@font-face {
+  font-family: pki-simple;
+  src: url(/fonts/blank-Regular.otf);
+}
+
+@font-face {
+  font-family: pki-simple-bold;
+  src: url(/fonts/blank-Bold.otf);
+}
+.pki-body {
+  margin-top: 50px;
+  background-color: white;
+  color: black;
+}
+
+.colorful {
+  background-color: #2ecc71;
+}
+
+.pki-header {
+  color: #008CBA !important;
+}
+
+.pki-text {
+  color: white;
+  background-color: black;
+  font-family: pki;
+  padding-left: 10px;
+}
+
+.pki-text-logo {
+  color: black;
+  font-size: 1.4em;
+  font-family: pki;
+}
+
+
+.pki-tagline {
+  color: white;
+  background-color: black;
+  font-family: pki-simple-bold;
+  padding-left: 10px;
+}
+
+.pki-title {
+  font-family: pki;
+}
+
+.pki-subtitle {
+  font-family: pki-simple-bold;
+  font-size: 2.0em;
+  color: black !important;
+}
+
+.row.moremargin {
+  margin-top: 100px !important;
+}
+
+.row.extramargin {
+  margin-top: 150px !important;
+}
+
+p.extramargin {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.verylarge {
+  font-size: 2.0em;
+}
+
+p.large {
+  font-size: 1.5em;
+}
+
+.pki-panel {
+  min-height: 300px;
+  border-width: 4px;
+  border-color: black;
+  background: white;
+}
+
+#mc_embed_signup input.button {
+  background-color: #008CBA;
+}

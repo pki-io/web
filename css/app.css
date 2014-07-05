@@ -1,86 +1,155 @@
-@font-face {
-  font-family: pki;
-  src: url(/fonts/tama_mini02.TTF);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
 }
 
 @font-face {
-  font-family: pki-simple;
-  src: url(/fonts/blank-Regular.otf);
-}
-
-@font-face {
-  font-family: pki-simple-bold;
-  src: url(/fonts/blank-Bold.otf);
-}
-.pki-body {
-  margin-top: 50px;
-  background-color: white;
-  color: black;
-}
-
-.pki-header {
-  color: #008CBA !important;
-}
-
-.pki-text {
-  color: white;
-  background-color: black;
   font-family: pki;
-  padding-left: 10px;
+  src: url(/fonts/Ash.ttf);
 }
 
-.pki-text-logo {
-  color: black;
-  font-size: 1.4em;
+.title {
+  min-width: 100%;
+  background-color: #27ae60;
+  min-height: 600px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about {
+  min-width: 100%;
+  min-height: 800px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #222222;
+}
+
+.works-with {
+  min-width: 100%;
+  padding-top: 100px;
+  min-height: 800px;
+  background-color: #ecf0f1;
+}
+
+.benefits {
+  min-width: 100%;
+  min-height: 800px;
+  padding-top: 100px;
+  background-color: #222222;
+}
+
+.contact {
+  min-width: 100%;
+  min-height: 800px;
+  padding-top: 100px;
+  background-color: #ecf0f1;
+}
+
+.footer {
+  min-width: 100%;
+  min-height: 800px;
+  padding-top: 100px;
+  background-color: #222222;
+}
+
+h1.big {
+  font-size: 10rem;
   font-family: pki;
 }
 
-
-.pki-tagline {
-  color: white;
-  background-color: black;
-  font-family: pki-simple-bold;
-  padding-left: 10px;
+h2.big {
+  font-size: 3em;
 }
 
-.pki-title {
-  font-family: pki;
-}
-
-.pki-subtitle {
-  font-family: pki-simple-bold;
-  font-size: 2.0em;
-  color: black !important;
-}
-
-.row.moremargin {
-  margin-top: 100px !important;
-}
-
-.row.extramargin {
-  margin-top: 150px !important;
-}
-
-p.extramargin {
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-}
-
-.verylarge {
-  font-size: 2.0em;
-}
-
-p.large {
+.light-text {
   font-size: 1.5em;
+  color: #bdc3c7;
 }
 
-.pki-panel {
-  min-height: 300px;
-  border-width: 4px;
-  border-color: black;
-  background: white;
+h1.light-text {
+  font-size: 5em;
+  color: #27ae60;
+  font-family: pki;
+}
+
+h2.heading {
+  color: #27ae60;
+  font-size: 2em;
+}
+
+.steps {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.step-text {
+  font-size: 1.1em;
+  color: #bdc3c7;
+}
+
+.logo {
+  color: #27ae60;
+  font-size: 5em;
+  padding-bottom: 50px;
+}
+
+.logos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.benefit {
+  padding-top: 50px;
+}
+
+.waitinglist {
+  background-color: black;
+  margin-top: 100px;
+}
+
+.social {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  margin: 2em;
+}
+
+h1.more {
+  font-size: 5em;
+}
+
+a {
+  color: #27ae60;
+}
+
+a:hover {
+  color: #7f8c8d;
 }
 
 #mc_embed_signup input.button {
-  background-color: #008CBA;
+  background-color: #27ae60;
 }
+
+@media only screen and (max-width: 320px) {
+
+  h1.big {
+    font-size: 3rem;
+  }
+
+  .light-text {
+    text-align: center;
+  }
+
+}
+

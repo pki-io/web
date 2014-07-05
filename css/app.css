@@ -154,6 +154,10 @@ a:hover {
   h1.light-text {
     font-size: 3em;
   }
+
+  #resetthenet {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -168,6 +172,10 @@ a:hover {
 
   h1.light-text {
     font-size: 3em;
+  }
+
+  #resetthenet {
+    display: none;
   }
 }
 

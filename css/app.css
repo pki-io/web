@@ -144,12 +144,15 @@ a:hover {
 @media only screen and (max-width: 320px) {
 
   h1.big {
-    font-size: 3rem;
+    font-size: 3em;
   }
 
   .light-text {
     text-align: center;
   }
 
+  h1.light-text {
+    font-size: 3em;
+  }
 }
 

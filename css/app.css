@@ -192,6 +192,10 @@ a:hover {
     font-size: 3em;
   }
 
+  h2.big {
+    font-size: 3em;
+  }
+
   .light-text {
     text-align: center;
   }

@@ -39,7 +39,8 @@
       <div class="row">
         <div class="large-12 columns text-center">
           <h1 class="big">pki.io</h2>
-          <h2 class="big">Scalable Infrastructure TLS</h2>
+          <h2 class="big">Scalable and open source X.509 certificate management</h2>
+          <h3 class="big">Our aim: Help make network encryption the norm</h3>
         </div>
       </div>
 
@@ -57,7 +58,7 @@
       <div class="response" id="mce-success-response" style="display:none"></div>
     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;"><input type="text" name="b_e0478b81ffa22c83afe3bfe15_fe919f2b15" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Join the waiting list" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      <div class="clear"><input type="submit" value="Get notified of project updates" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
   </form>
   </div>
   <script type="text/javascript">
@@ -259,8 +260,8 @@
     <div class="about">
       <div class="row">
         <div class="large-12 columns">
-          <p class="light-text">pki.io is a scalable and secure way to manage the CAs and certificates used by TLS/SSL to protect your infrastructure and customer data.</p>
-          <p class="light-text">Protecting your internal traffic is essential, whether for compliance or simply following security best practices, and with pki.io you can easily encrypt internal infrastructure traffic, SSL VPN connections, intranet and operations services, as well as implement X.509 mutual authentication.</p>
+          <p class="light-text">pki.io is an open source project that aims to make managing and deploying X.509 certificates easy and scalable.</p>
+          <p class="light-text">Protecting your internal traffic is essential, whether for compliance or simply following security best practices, and pki.io is being designed to help you easily manage certificates for internal infrastructure traffic, SSL and IPSec VPN connections, intranet and operations services, as well as implement X.509 mutual authentication.</p>
         </div>
       </div>
 
@@ -281,14 +282,32 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="large-12 columns">
+          <p class="light-text">pki.io is in the early design stage of development. If you're interested in helping out in any way, contact us at <a href="mailto:help@pki.io">help@pki.io</a> or on twitter at <a href="">@pki_io</a>.</p>
+        </div>
+      </div>
+
     </div>
 
     <div class="works-with">
+
       <div class="row">
         <div class="large-12 columns text-center">
-          <h1>Works with...</h1>
+          <h1 class="more">How it works</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="large-12 columnsi text-center"><br/>
+          <img class="design" src="/img/basics.png"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns text-center">
+          <h1>Designed to work with...</h1>
           <img class="logos" src="/img/logos.png"/>
-          <h1>And many more!</h1>
+          <h1 class="bottom">And anything else that uses X.509 certificates</h1>
         </div>
       </div>
     </div>
@@ -297,281 +316,74 @@
       <div class="row">
         <div class="large-12 column text-center">
           <h1 class="light-text">PKI.IO</h1>
-          <h2 class="light-text">is...</h2>
+          <h2 class="light-text">Design Goals</h2>
         </div>
       </div>
 
-      <div class="row light-text benefit">
+      <div class="row light-text">
 
-        <div class="large-4 columns">
-          <div class="row text-center">
-            <h2 class="heading">Scalable</h2>
-          </div>
-          <div class="row">
-            <ul>
-              <li>Admin-driven or fully automated, ideal for cloud deployments and hybrid environments</li>
-              <li>Designed to scale from tens to thousands of servers</li>
-              <li>Integrates with existing Configuration Management systems</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="large-4 columns">
-          <div class="row text-center">
-            <h2 class="heading">Secure</h2>
-          </div>
-          <div class="row">
-            <ul>
-              <li>Encrypt your internal and external traffic with minimal effort - no excuses</li>
-              <li>Quickly rotate CAs and certificates in the event of a compromise</li>
-              <li>Only you have access to your private or sensitive data (especially private keys)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="large-4 columns">
-          <div class="row text-center">
-            <h2 class="heading">Cost-effective</h2>
-          </div>
-          <div class="row">
-            <ul>
-              <li>No development time required - focus on building your awesome products and services</li>
-              <li>Create as many certificates and CAs as you need at no extra cost</li>
-              <li>A secure SaaS platform - no need to develop a secure CA infrastructure yourself</li>
-            </ul>
-          </div>
+        <div class="large-8 large-offset-2 columns">
+          <h2>Goals</h2>
+          <ul class="goals">
+            <li>Secure by design</li>
+            <li>Secure install by default</li>
+            <li>Scalability by design</li>
+            <li>Scalability through automation</li>
+            <li>Easy to use</li>
+            <li>Easy administration</li>
+            <li>Private data is encrypted</li>
+            <li>Everything is signed (authenticated)</li>
+            <li>Reuse existing trusted platforms (e.g. SSH or Configuration Management systems)</li>
+            <li>A compromise of the API service must only affect availability, not confidentiality or integrity</li>
+            <li>Important data is automatically backed up</li>
+            <li>Only selected admins (or admin processes) hold the keys to the kingdom</li>
+            <li>It should be possible to recover from the compromise of one or more admin systems</li>
+            <li>It should ideally be possible to recover from the activity of a single malicious admin user</li>
+            <li>A malicious system must not be able to impersonate an existing system</li>
+            <li>No limits to the number of CAs or certificates used</li>
+            <li>Publicly reviewable code</li>
+            <li>Built using an appropriate language</li>
+            <li>Developed using SDLC best practices</li>
+          </ul>
         </div>
 
       </div>
     </div>
 
-    <div class="contact">
+    <div class="design">
+
       <div class="row">
         <div class="large-12 columns text-center">
-          <h1 class="more">Join the waiting list</h1>
+          <h1 class="more">Design and architecture</h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="large-6 large-offset-3 columns">
-              <!-- Begin MailChimp Signup Form -->
-  <div id="mc_embed_signup" class="waitinglist">
-  <form action="http://pki.us8.list-manage.com/subscribe/post?u=e0478b81ffa22c83afe3bfe15&amp;id=fe919f2b15" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    
-  <div class="mc-field-group">
-    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="you@domain.com">
-  </div>
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;"><input type="text" name="b_e0478b81ffa22c83afe3bfe15_fe919f2b15" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Join now" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-  </form>
-  </div>
-  <script type="text/javascript">
-  var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';
-  try {
-      var jqueryLoaded=jQuery;
-      jqueryLoaded=true;
-  } catch(err) {
-      var jqueryLoaded=false;
-  }
-  var head= document.getElementsByTagName('head')[0];
-  if (!jqueryLoaded) {
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
-      head.appendChild(script);
-      if (script.readyState && script.onload!==null){
-          script.onreadystatechange= function () {
-                if (this.readyState == 'complete') mce_preload_check();
-          }    
-      }
-  }
-
-  var err_style = '';
-  try{
-      err_style = mc_custom_error_style;
-  } catch(e){
-      err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
-  }
-  var head= document.getElementsByTagName('head')[0];
-  var style= document.createElement('style');
-  style.type= 'text/css';
-  if (style.styleSheet) {
-    style.styleSheet.cssText = err_style;
-  } else {
-    style.appendChild(document.createTextNode(err_style));
-  }
-  head.appendChild(style);
-  setTimeout('mce_preload_check();', 250);
-
-  var mce_preload_checks = 0;
-  function mce_preload_check(){
-      if (mce_preload_checks>40) return;
-      mce_preload_checks++;
-      try {
-          var jqueryLoaded=jQuery;
-      } catch(err) {
-          setTimeout('mce_preload_check();', 250);
-          return;
-      }
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
-      head.appendChild(script);
-      try {
-          var validatorLoaded=jQuery("#fake-form").validate({});
-      } catch(err) {
-          setTimeout('mce_preload_check();', 250);
-          return;
-      }
-      mce_init_form();
-  }
-  function mce_init_form(){
-      jQuery(document).ready( function($) {
-        var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-        var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
-        $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-        options = { url: 'http://pki.us8.list-manage.com/subscribe/post-json?u=e0478b81ffa22c83afe3bfe15&id=fe919f2b15&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
-                      beforeSubmit: function(){
-                          $('#mce_tmp_error_msg').remove();
-                          $('.datefield','#mc_embed_signup').each(
-                              function(){
-                                  var txt = 'filled';
-                                  var fields = new Array();
-                                  var i = 0;
-                                  $(':text', this).each(
-                                      function(){
-                                          fields[i] = this;
-                                          i++;
-                                      });
-                                  $(':hidden', this).each(
-                                      function(){
-                                          var bday = false;
-                                          if (fields.length == 2){
-                                              bday = true;
-                                              fields[2] = {'value':1970};//trick birthdays into having years
-                                          }
-                                        if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                          this.value = '';
-                        } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                          this.value = '';
-                        } else {
-                            if (/\[day\]/.test(fields[0].name)){
-                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                         
-                            } else {
-                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-                                            }
-                                        }
-                                      });
-                              });
-                          $('.phonefield-us','#mc_embed_signup').each(
-                              function(){
-                                  var fields = new Array();
-                                  var i = 0;
-                                  $(':text', this).each(
-                                      function(){
-                                          fields[i] = this;
-                                          i++;
-                                      });
-                                  $(':hidden', this).each(
-                                      function(){
-                                          if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
-                                          this.value = '';
-                        } else {
-                            this.value = 'filled';
-                                        }
-                                      });
-                              });
-                          return mce_validator.form();
-                      }, 
-                      success: mce_success_cb
-                  };
-        $('#mc-embedded-subscribe-form').ajaxForm(options);
-        
-        
-      });
-  }
-  function mce_success_cb(resp){
-      $('#mce-success-response').hide();
-      $('#mce-error-response').hide();
-      if (resp.result=="success"){
-          $('#mce-'+resp.result+'-response').show();
-          $('#mce-'+resp.result+'-response').html(resp.msg);
-          $('#mc-embedded-subscribe-form').each(function(){
-              this.reset();
-        });
-      } else {
-          var index = -1;
-          var msg;
-          try {
-              var parts = resp.msg.split(' - ',2);
-              if (parts[1]==undefined){
-                  msg = resp.msg;
-              } else {
-                  i = parseInt(parts[0]);
-                  if (i.toString() == parts[0]){
-                      index = parts[0];
-                      msg = parts[1];
-                  } else {
-                      index = -1;
-                      msg = resp.msg;
-                  }
-              }
-          } catch(e){
-              index = -1;
-              msg = resp.msg;
-          }
-          try{
-              if (index== -1){
-                  $('#mce-'+resp.result+'-response').show();
-                  $('#mce-'+resp.result+'-response').html(msg);            
-              } else {
-                  err_id = 'mce_tmp_error_msg';
-                  html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-                  
-                  var input_id = '#mc_embed_signup';
-                  var f = $(input_id);
-                  if (ftypes[index]=='address'){
-                      input_id = '#mce-'+fnames[index]+'-addr1';
-                      f = $(input_id).parent().parent().get(0);
-                  } else if (ftypes[index]=='date'){
-                      input_id = '#mce-'+fnames[index]+'-month';
-                      f = $(input_id).parent().parent().get(0);
-                  } else {
-                      input_id = '#mce-'+fnames[index];
-                      f = $().parent(input_id).get(0);
-                  }
-                  if (f){
-                      $(f).append(html);
-                      $(input_id).focus();
-                  } else {
-                      $('#mce-'+resp.result+'-response').show();
-                      $('#mce-'+resp.result+'-response').html(msg);
-                  }
-              }
-          } catch(e){
-              $('#mce-'+resp.result+'-response').show();
-              $('#mce-'+resp.result+'-response').html(msg);
-          }
-      }
-  }
-
-  </script>
-  <!--End mc_embed_signup-->
+        <div class="large-12 columnsi text-center"><br/>
+          <img class="design" src="/img/architecture_overview.png"/>
+          <p class="design">pki.io is made up of three main components. The agent that runs on client servers; admin users or an admin service; and an API service that glues everything together. The client agent is responsible for generating and uploading CSRs as well as downloading and deploying the certs. Admins can either be users or an admin service, and they look after the CAs and sign certs etc. All connections from the agents and admins are outbound to the API service which acts as temporary and persistent data storage. The API service and admin service are run active-active for High Availability.</p>
+          <img class="design" src="/img/certs.png"/>
+          <p class="design">Like a traditional X.509 PKI, there is a root CA. This CA is expected to be valid for a very long time (e.g. 10 years) and the private keys are stored securely offline. The root CA is used to sign an intermediate CA which for pki.io is the Org CA. All the admins have access to the Org's private keys so they can act on behalf of the Org. The Org CA is then itself used to sign service CAs which are used for client certificates. We use multiple service CAs a means of separating services. Revocation dosesn't then depend on CRLs because we can simply change the service CA and regenerate and deploy all the certs automatically. Also, it makes mutual authentication simpler because we can authenticate and authorize any valid certificate from a certain service CA knowing that only relevant clients have access.</p>
+          <img class="design" src="/img/encrypted_payload.png"/>
+          <p class="design">All sensitive data (such as private keys) is encrypted and all data is authenticated using signatures. For example, if an admin creates a new CA, then they would encrypt the CA private key using something like AES, then the AES key would be encrypted using the Org's public encryption key, and the two would be combined and signed by the orgs private signing key. All three bits of information would be transported together.</p> 
         </div>
       </div>
+
     </div>
 
     <div class="footer">
 
+      <div class="row">
+        <div class="large-12 columns">
+          <p class="light-text text-center">Source code will be available on <a href="https://github.com/pki-io">GitHub</a>.</p>
+        </div>
+      </div>
+
       <div class="row social">
         <div class="large-12 columns text-center">
           <a class="logo entypo-facebook-circled" href="https://www.facebook.com/sharer/sharer.php?u=http://pki.io"></a> 
-          <a class="logo entypo-twitter-circled" href="https://twitter.com/home?status=http://pki.io%20is%20an%20easy,%20secure%20and%20automated%20way%20to%20manage%20SSL%20CAs%20and%20certificates.%20Check%20it%20out.%20Encryption.%20Everywhere."></a> 
-          <a class="logo entypo-linkedin-circled" href="https://www.linkedin.com/shareArticle?mini=true&url=http://pki.io&title=pki.io%20-%20Encryption.%20Everywhere.&summary=pki.io%20is%20a%20cost-effective,%20secure%20and%20automated%20way%20to%20manage%20the%20CAs%20and%20certificates%20used%20by%20TLS/SSL%20to%20protect%20your%20infrastructure%20and%20customer%20data.&source="></a> 
+          <a class="logo entypo-twitter-circled" href="https://twitter.com/home?status=http://pki.io%20-%20Scalable%20and%20open%20source%20X.509%20certificate%20management."></a>
+          <a class="logo entypo-linkedin-circled" href="https://www.linkedin.com/shareArticle?mini=true&url=http://pki.io&title=Scalable%20and%20open%20source%20X.509%20certificate%20management.&summary=pki.io%20is%20an%20open%20source%20project%20that%20aims%20to%20make%20managing%20and%20deploying%20X.509%20certificates%20easy%20and%20scalable.&source="></a> 
           <a class="logo entypo-gplus-circled" href="https://plus.google.com/share?url=http://pki.io"></a>
         </div>
       </div>

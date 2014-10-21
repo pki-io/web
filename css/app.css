@@ -63,6 +63,11 @@ h2.big {
   font-size: 4em;
 }
 
+h3.big {
+  font-size: 2em;
+  padding-top: 80px;
+}
+
 .light-text {
   font-size: 1.5em;
   color: #bdc3c7;
@@ -72,6 +77,10 @@ h1.light-text {
   font-size: 5em;
   color: #27ae60;
   font-family: pki;
+}
+
+h2.light-text {
+  font-size: 4em;
 }
 
 h2.heading {
@@ -118,11 +127,17 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 
-li {
-  margin: 2em;
+ul.goals {
+  list-style-type: disc;
+  margin: 0;
+  font-size: 0.8em;
+  padding-bottom: 100px;
+}
+
+h1.bottom {
+  padding-bottom: 100px;
 }
 
 h1.more {
@@ -132,6 +147,14 @@ h1.more {
 a {
   color: #27ae60;
 }
+
+
+p.design {
+  font-size: 1.5em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 
 a:hover {
   color: #7f8c8d;

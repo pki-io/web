@@ -81,6 +81,8 @@ h1.light-text {
 
 h2.light-text {
   font-size: 4em;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 h2.heading {
@@ -130,9 +132,8 @@ ul {
 }
 
 ul.goals {
-  list-style-type: disc;
   margin: 0;
-  font-size: 0.8em;
+  font-size: 1.1em;
   padding-bottom: 100px;
 }
 

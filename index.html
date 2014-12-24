@@ -282,6 +282,11 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="large-12 columns">
+          <img class="design" src="/img/roadmap.png"/>
+        </div>
+      </div>
 
     </div>
 
@@ -317,15 +322,15 @@
 
       <div class="row">
         <div class="large-12 columns text-center">
-          <p class="light-text">pki.io is in the early design stage of development.</p>
+          <p class="light-text">pki.io is in the early stage of development.</p>
           <p class="light-text">If you're interested in helping out in any way, contact us at <a href="mailto:help@pki.io">help@pki.io</a> or on twitter at <a href="https://twitter.com/pki_io">@pki_io</a>.</p>
         </div>
       </div>
 
       <div class="row">
         <div class="large-12 columns text-center">
+          <p class="light-text">Source code is available on <a href="https://github.com/pki-io">GitHub</a>.</p>
           <p class="light-text">The project wiki can be found <a href="https://github.com/pki-io/pki.io/wiki">here</a>.</p>
-          <p class="light-text">Source code will be available on <a href="https://github.com/pki-io">GitHub</a>.</p>
           <p class="light-text">We're on IRC: <a href="http://webchat.freenode.net/?channels=pki.io">#pki.io</a> on Freenode.</p>
           <p class="light-text">There is a mailing list through <a href="https://groups.google.com/forum/#!forum/pki_io">Google Groups</a>.</p>
         </div>
@@ -372,8 +377,10 @@
         <div class="large-12 columnsi text-center"><br/>
           <img class="design" src="/img/architecture_overview.png"/>
           <p class="design">pki.io is made up of three main components. The agent that runs on client servers; admin users or an admin service; and an API service that glues everything together. The client agent is responsible for generating and uploading CSRs as well as downloading and deploying the certs. Admins can either be users or an admin service, and they look after the CAs and sign certs etc. All connections from the agents and admins are outbound to the API service which acts as temporary and persistent data storage. The API service and admin service are run active-active for High Availability.</p>
-          <img class="design" src="/img/certs.png"/>
-          <p class="design">Like a traditional X.509 PKI, there is a root CA. This CA is expected to be valid for a very long time (e.g. 10 years) and the private keys are stored securely offline. The root CA is used to sign an intermediate CA which for pki.io is the Org CA. All the admins have access to the Org's private keys so they can act on behalf of the Org. The Org CA is then itself used to sign service CAs which are used for client certificates. We use multiple service CAs a means of separating services. Revocation doesn't then depend on CRLs because we can simply change the service CA and regenerate and deploy all the certs automatically. Also, it makes mutual authentication simpler because we can authenticate and authorize any valid certificate from a certain service CA knowing that only relevant clients have access.</p>
+          <img class="design" src="/img/simple_service_hierarchy.png"/>
+          <p class="design">The simplest way to use pki.io is using service CAs. For each service in your environment (e.g. web, database, vpn) you create a root CA which signs all client certificates. Each service CA private key is encrypted and signed by the Org entity. This protects the private data and only allows Org administrators to manage and use the CA. Using service CAs means we don't have to worry about CRLs or OCSP. In the event of a client compromise we can rotate out the CA keys, and regenerate and distribute all client certificates. A Root entity is used to sign the Org entity keys and has its own private keys stored off line. In the event that the Org is compromised, it can be regenerated using the Root entity.</p>
+          <img class="design" src="/img/service_hierarchy.png"/>
+          <p class="design">pki.io also supports a more traditional approach to X.509. It still has a Root and Org entity. It can even have sub entities that still use service CAs (WebOps in the diagram). But in addition to this there is a org-level root CA. This is used to sign any required sub-CAs. In the example diagram there is a HR CA that is used to sign client certificates using add-on SCEP and OCSP services. This approach supports having administrators at different levels which helps isolate impact in the event of an admin compromise.</p>
           <img class="design" src="/img/encrypted_payload.png"/>
           <p class="design">All sensitive data (such as private keys) is encrypted and all data is authenticated using signatures. For example, if an admin creates a new CA, then they would encrypt the CA private key using something like AES, then the AES key would be encrypted using the Org's public encryption key, and the two would be combined and signed by the orgs private signing key. All three bits of information would be transported together.</p> 
         </div>
